@@ -44,6 +44,17 @@ export default class MiniSlider extends Slider {
             this.container.appendChild(this.slides[0]);
             this.decorizeSlides();
         }
+
+        // for(let i=1; i < this.slides.length; i++) {
+        //     if (this.slides[i].tagName !== "BUTTON") {
+        //         this.container.appendChild(this.slides[0]);
+        //         this.decorizeSlides();
+        //         break;
+        //     } else {
+        //         this.container.appendChild(this.slides[i]);
+        //         i--;
+        //     }
+        // }
     }
 
     bindTriggers() {

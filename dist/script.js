@@ -383,14 +383,14 @@ class MiniSlider extends _slider__WEBPACK_IMPORTED_MODULE_0__["default"] {
   }
 
   nextSlide() {
-    if (this.slides[1].tagName == 'BUTTON' && this.slides[2].tagName == 'BUTTON') {
-      this.container.appendChild(this.slides[0]); // Slide
-      this.container.appendChild(this.slides[1]); // Btn
+    if (this.slides[1].tagName == "BUTTON" && this.slides[2].tagName == "BUTTON") {
       this.container.appendChild(this.slides[2]); // Btn
+      this.container.appendChild(this.slides[1]); // Btn
+      this.container.appendChild(this.slides[0]); // Slide
       this.decorizeSlides();
     } else if (this.slides[1].tagName == 'BUTTON') {
-      this.container.appendChild(this.slides[0]); // Slide
       this.container.appendChild(this.slides[1]); // Btn
+      this.container.appendChild(this.slides[0]); // Slide
       this.decorizeSlides();
     } else {
       this.container.appendChild(this.slides[0]);
